@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/two-style.css">
 
@@ -20,7 +20,7 @@
                 <img src="assets/img/logo.jpeg" alt="Logo">
             </div>
             <div class="header__main-nav">
-                <i class="fas fas fa-angle-right" id="btnCloseMenu"></i>
+
                 <nav class="menu__nav">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -32,16 +32,33 @@
                 </nav>
 
             </div>
-            <i class="fas fa-bars" id="btnOpenMenu"></i>
+            <i class="fa-solid fa-bars" id="btnOpenMenu"></i>
+            <i class="fa-solid fa-xmark hidden" id="btnCloseMenu"></i>
         </div>
+
+        <div class="menu__mobil wh-0" id="menuMobil">
+            <nav class="menu__mobil-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Acerca de mí</a></li>
+                    <li><a href="#">Consultorio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <a href="#">Salir</a>
+            </nav>
+        </div>
+
     </header>
 
     <section>
         <div class="imagen">
             <div class="shadow"></div>
-            
+
         </div>
     </section>
+
+    <script src="assets/js/two-pmpaparoni.js"></script>
 
 </body>
 
