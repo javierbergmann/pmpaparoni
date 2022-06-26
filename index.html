@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.1.1-web/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/two-style.css">
 
@@ -33,31 +35,126 @@
 
             </div>
             <i class="fa-solid fa-bars" id="btnOpenMenu"></i>
-            <i class="fa-solid fa-xmark hidden" id="btnCloseMenu"></i>
-        </div>
+            <i class="fa-solid fa-xmark none" id="btnCloseMenu"></i>
+            <div class="menu__mobil hidden" id="menuMobil">
+                <nav class="menu__mobil-nav" id="menuMobilNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Acerca de mí</a></li>
+                        <li><a href="#">Consultorio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
 
-        <div class="menu__mobil wh-0" id="menuMobil">
-            <nav class="menu__mobil-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Acerca de mí</a></li>
-                    <li><a href="#">Consultorio</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-                <a href="#">Salir</a>
-            </nav>
+            </div>
         </div>
 
     </header>
 
     <section>
         <div class="imagen">
-            <div class="shadow"></div>
+            <div class="flex-center">
+                <p class="p-text">
+                    construír hábitos es salud...
+                </p>
+                <p class="p-text">Te acompaño en este camino de DESCUBRIMIENTO</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
 
         </div>
     </section>
 
+    <main class="container">
+        <section class="services">
+            <div class="services__section">
+                <img src="assets/img/nutricion.png" alt="Planes alimentarios">
+                <h3>Planes alimentarios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, amet, esse tenetur maxime
+                    deserunt incidunt par laboriosam harum voluptatem vitae, id quaerat alias eaque
+                    quia officiis velit? Aut.</p>
+
+            </div>
+
+            <div class="services__section">
+                <img src="assets/img/plan.png" alt="Planes alimentarios">
+                <h3>Planes alimentarios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, amet, esse tenetur maxime
+                    deserunt incidunt pariatur dicta dolorum laboriosam harum voluptatem vitae, id quaerat alias eaque
+                    quia officiis velit? Aut.</p>
+
+            </div>
+
+            <div class="services__section">
+                <img src="assets/img/salud.png" alt="Planes alimentarios">
+                <h3>Alimentación saludable</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, amet, esse tenetur maxime
+                    deserunt incidunt pariatur dicta dolorum laboriosam harum voluptatem vitae, id quaerat alias eaque
+                    quia officiis velit? Aut.</p>
+
+            </div>
+
+        </section>
+    </main>
+
+    <section class="container bg-ligth">
+        <div class="about animate__animated animate__bounceInRight">
+            <div class="about__me">
+                <h3>Paola M. Paparoni</h3>
+                <h2>Lic. en Nutriión</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur neque provident dolores aliquam
+                    numquam rerum quaerat cumque quos dignissimos, placeat perferendis natus pariatur odit quisquam
+                    consequatur, dolorum enim suscipit delectus!</p>
+            </div>
+            <div class="about__photo">
+                <img src="assets/img/ppaparoni.jpeg" alt="Paola Paparoni">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container">
+        <div class="material">
+            <div class="material__title">
+                <h3>Recursos</h3>
+            </div>
+            <div class="material__section">
+                <h2>E-Books</h2>
+            </div>
+            <div class="material__section">
+                <h2>E-Books</h2>
+            </div>
+            <div class="material__section">
+                <h2>E-Books</h2>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
+    <footer class="container">
+        
+        <div class="footer">
+            <div class="footer__contact">
+                <div class="footer__contact-contact">
+                    <h2>Contactame</h2>
+
+                </div>
+                <div class="footer__contact-social">
+                    <h2>Seguime</h2>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Copyright &copy; 2022 Paola M. Paparoni | Powered by two SERVICIOS</p>
+
+            </div>
+        </div>
+        <button></button>
+    </footer>
     <script src="assets/js/two-pmpaparoni.js"></script>
 
 </body>

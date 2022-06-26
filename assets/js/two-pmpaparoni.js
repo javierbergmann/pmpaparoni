@@ -1,15 +1,16 @@
 let btnOpenMenu= document.getElementById("btnOpenMenu");
 let menuMobil= document.getElementById("menuMobil");
 let btnCloseMenu= document.getElementById("btnCloseMenu");
+let menuMobilNav= document.getElementById("menuMobilNav");
 
 btnOpenMenu.addEventListener("click",()=>{
-    menuMobil.classList.remove("wh-0");
-    btnCloseMenu.classList.remove("hidden");
-    btnOpenMenu.classList.add("hidden");
+    menuMobil.classList.remove("hidden");
+    btnCloseMenu.classList.remove("none");
+    btnOpenMenu.classList.add("none");
 } )
 
 btnCloseMenu.addEventListener("click", ()=>{
-    menuMobil.classList.add("wh-0");
-    btnOpenMenu.classList.remove("hidden");
-    btnCloseMenu.classList.add("hidden");
+    menuMobil.classList.add("hidden");
+    btnOpenMenu.classList.remove("none");
+    btnCloseMenu.classList.add("none");
 })

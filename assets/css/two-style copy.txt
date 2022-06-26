@@ -1,0 +1,358 @@
+<<<<<<<<<<<<<<<<<ARCHIVO CSS
+============================================
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto:wght@100;400&display=swap');
+
+:root {
+    --bggray: #c2c2c2;
+    --bggray-2: #9e9e9e;
+    --white: #fff;
+    --black: #000;
+    --pastel1: #a4a4ab;
+    --pastel2: #f7a9b3;
+    --pastel2rgb: rgb(247, 169, 179);
+    --font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+.header {
+    width: 100%;
+}
+
+.header__main {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5rem;
+    margin: auto;
+}
+
+.header__main i {
+    font-size: 2.5rem;
+    color: var(--pastel2);
+}
+
+.header__main-logo img {
+    width: 22rem;
+    cursor: pointer;
+}
+
+.header__main-nav {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.p-text {
+    font-size: 3rem;
+    color: var(--pastel2);
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    background: #818181;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #4d4d4d;
+    color: #dedede;
+}
+
+.flex-center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    visibility:hidden;
+}
+
+.opacity{
+    height: 0;
+}
+
+.not-opacity{
+    opacity: 1;
+}
+
+.caja{
+    display: none;
+    width: 0;
+    background: red;
+    height: 0;
+    z-index: 900;
+}
+
+.menu__mobil {
+    position: absolute;
+    background: rgba(247, 169, 179, .7);
+   /*background: #000;*/
+   top: 7.5rem;
+    width: 100%;
+    height: 0;
+    z-index: 1000;
+    transition: all 1s;
+   /* visibility: hidden;*/
+}
+
+.menu__mobil>.absolute{
+    height: 100%;
+    width: 100%;
+}
+
+.visible {
+    visibility: visible;
+ }
+
+.menu__mobil-nav {
+   display: flex;
+   flex-direction: column;
+}
+
+.menu__mobil-nav ul li{
+    list-style: none;
+}
+
+.menu__mobil-nav ul li a {
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    padding: 1rem 3rem;
+}
+
+.none{
+    display: none;
+}
+
+.menu__mobil-nav ul li a:hover {
+    background: green;
+    color: var(--white);
+}
+
+.menu-mobil-show{
+    width: 100%;
+    height: 40rem;
+}
+
+.wh-0 {
+    height: 0;
+    width: 0;
+
+}
+
+.services {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.services__section {
+    text-align: center;
+}
+
+.services__section img{
+    width: 5rem;
+}
+
+.services__section h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--pastel1);
+    padding: 1rem;
+}
+
+.services__section p{
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .header__main-nav {
+        display: block;
+    }
+
+    .header__main i {
+        display: none;
+    }
+
+    .menu__mobil {
+        display: none;
+    }
+    .services{
+        width: 90%;
+        margin: 3rem auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+
+.header__main-nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+.header__main-nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--bggray);
+    padding: 5px 10px;
+    transition: all .3s;
+}
+
+.header__main-nav ul li a:hover {
+    color: var(--bggray-2);
+}
+
+.imagen {
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/two-style.css">
+
+    <title>Paparoni M. Paola | LIC. EN NUTRICION</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__main">
+            <div class="header__main-logo">
+                <img src="assets/img/logo.jpeg" alt="Logo">
+            </div>
+            <div class="header__main-nav">
+
+                <nav class="menu__nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Acerca de mí</a></li>
+                        <li><a href="#">Consultorio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <i class="fa-solid fa-bars" id="btnOpenMenu"></i>
+            <i class="fa-solid fa-xmark none" id="btnCloseMenu"></i>
+            <div class="menu__mobil" id="menuMobil">
+                <nav class="menu__mobil-nav" id="menuMobilNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Prieba 1</a></li>
+                        <li><a href="#">Prueba 2</a></li>
+                    </ul>
+                </nav>
+                
+      
+              
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="imagen">
+            <div class="flex-center">
+                <p class="p-text">
+                    construír hábitos es salud...
+                </p>
+                <p class="p-text">Te acompaño en este camino de DESCUBRIMIENTO</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="services">
+            <div class="services__section">
+                <img src="assets/img/nutricion.png" alt="Planes alimentarios">
+                <h3>Planes alimentarios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, amet, esse tenetur maxime deserunt incidunt pariatur dicta dolorum laboriosam harum voluptatem vitae, id quaerat alias eaque quia officiis velit? Aut.</p>
+
+            </div>
+
+            <div class="services__section">
+                <img src="assets/img/plan.png" alt="Planes alimentarios">
+                <h3>Planes alimentarios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, amet, esse tenetur maxime deserunt incidunt pariatur dicta dolorum laboriosam harum voluptatem vitae, id quaerat alias eaque quia officiis velit? Aut.</p>
+
+            </div>
+
+            <div class="services__section">
+                <img src="assets/img/salud.png" alt="Planes alimentarios">
+                <h3>Alimentación saludable</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, amet, esse tenetur maxime deserunt incidunt pariatur dicta dolorum laboriosam harum voluptatem vitae, id quaerat alias eaque quia officiis velit? Aut.</p>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="assets/js/two-pmpaparoni.js"></script>
+
+</body>
+
+</html>
